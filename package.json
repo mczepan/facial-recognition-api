@@ -20,7 +20,11 @@
 	},
 	"homepage": "https://github.com/mczepan/facial-recognition-api#readme",
 	"dependencies": {
-		"express": "^4.18.1"
+		"bcrypt-nodejs": "^0.0.3",
+		"cors": "^2.8.5",
+		"express": "^4.18.1",
+		"knex": "^2.2.0",
+		"pg": "^8.7.3"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.19"
