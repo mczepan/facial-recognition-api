@@ -13,7 +13,7 @@ const app = express();
 const db = knex({
 	client: 'pg',
 	connection: {
-		host: '127.0.0.1', //localhost
+		host: 'postgresql-flexible-76887',
 		user: 'postgres', //add your user name for the database here
 		// port: 5432, // add your port number here
 		password: 'admin', //add your correct password in here
