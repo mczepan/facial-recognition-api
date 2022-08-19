@@ -39,4 +39,4 @@ app.get('/profile/:userId', (req, res) => profileGetHandler(req, res, db));
 app.put('/image/:userId', (req, res) => imageHandler(req, res, db));
 app.post('/imageUrl', (req, res) => handleApiCall(req, res));
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
