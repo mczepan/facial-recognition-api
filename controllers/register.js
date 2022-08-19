@@ -1,5 +1,4 @@
 export const handleRegister = (req, res, db, bcrypt) => {
-	console.log('req', req);
 	const { name, email, password } = req.body;
 
 	// bcrypt.hash(password, null, null, (err, hash) => console.log(hash));

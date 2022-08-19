@@ -6,6 +6,7 @@ import { handleRegister } from './controllers/register.js';
 import { signinHandler } from './controllers/signin.js';
 import { profileGetHandler } from './controllers/profile.js';
 import { imageHandler } from './controllers/image.js';
+import { handleApiCall } from './controllers/image.js';
 
 const app = express();
 
@@ -36,5 +37,6 @@ app.post('/register', (req, res) => handleRegister(req, res, db, bcrypt));
 app.get('/profile/:userId', (req, res) => profileGetHandler(req, res, db));
 
 app.put('/image/:userId', (req, res) => imageHandler(req, res, db));
+app.post('/imageUrl', (req, res) => handleApiCall(req, res));
 
 app.listen(3001);
