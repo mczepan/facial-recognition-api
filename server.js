@@ -15,7 +15,7 @@ const db = knex({
 	connection: {
 		host: '127.0.0.1', //localhost
 		user: 'postgres', //add your user name for the database here
-		port: 5432, // add your port number here
+		// port: 5432, // add your port number here
 		password: 'admin', //add your correct password in here
 		database: 'smart_brain', //add your database name you created here
 	},
